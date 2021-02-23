@@ -1,0 +1,4255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HexUI</class>
+ <widget class="QFrame" name="HexUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1133</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hex Game</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../GUI pictures/bee-and-dripping-honeycomb-sticker-1561735216.3313851.png</normaloff>../GUI pictures/bee-and-dripping-honeycomb-sticker-1561735216.3313851.png</iconset>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1131</width>
+     <height>771</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>530</y>
+       <width>241</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../GUI pictures/OkHex.png</normaloff>../GUI pictures/OkHex.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>400</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="NumePlayer2_2">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>210</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="plainText">
+      <string>Player2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CuloarePlayer1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>330</y>
+       <width>391</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Alegeti culoarea primului jucator:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="NumePlayer1_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="plainText">
+      <string>Player1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NumePlayer1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>511</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Introduceti numele primului jucator:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NumePlayer2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>150</y>
+       <width>621</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Introduceti numele celui de-al doileai jucator:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CuloarePlayer2">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>330</y>
+       <width>511</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Alegeti culoarea celui de-al doileai jucator:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_P1">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>400</y>
+       <width>181</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>37</width>
+       <height>37</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>Albastru</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Day Sky/HSI_sky_001.png</normaloff>../GUI pictures/Hexagons/HSI - Day Sky/HSI_sky_001.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Verde</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Evergreen/HSI_evergreen_004.png</normaloff>../GUI pictures/Hexagons/HSI - Evergreen/HSI_evergreen_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Negru</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Flint/HSI_flint_002.png</normaloff>../GUI pictures/Hexagons/HSI - Flint/HSI_flint_002.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Galben</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Lemon/HSI_lemon_004.png</normaloff>../GUI pictures/Hexagons/HSI - Lemon/HSI_lemon_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Portocaliu</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Orange/HSI_orange_002.png</normaloff>../GUI pictures/Hexagons/HSI - Orange/HSI_orange_002.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Roz</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Pink/HSI_pink_004.png</normaloff>../GUI pictures/Hexagons/HSI - Pink/HSI_pink_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Rosu</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Red/HSI_red_004.png</normaloff>../GUI pictures/Hexagons/HSI - Red/HSI_red_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mov</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Ultra/HSI_ultra_004.png</normaloff>../GUI pictures/Hexagons/HSI - Ultra/HSI_ultra_004.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_P2">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>390</y>
+       <width>181</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>37</width>
+       <height>37</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>Albastru</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Day Sky/HSI_sky_001.png</normaloff>../GUI pictures/Hexagons/HSI - Day Sky/HSI_sky_001.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Verde</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Evergreen/HSI_evergreen_004.png</normaloff>../GUI pictures/Hexagons/HSI - Evergreen/HSI_evergreen_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Negru</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Flint/HSI_flint_002.png</normaloff>../GUI pictures/Hexagons/HSI - Flint/HSI_flint_002.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Galben</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Lemon/HSI_lemon_004.png</normaloff>../GUI pictures/Hexagons/HSI - Lemon/HSI_lemon_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Portocaliu</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Orange/HSI_orange_002.png</normaloff>../GUI pictures/Hexagons/HSI - Orange/HSI_orange_002.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Roz</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Pink/HSI_pink_004.png</normaloff>../GUI pictures/Hexagons/HSI - Pink/HSI_pink_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Rosu</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Red/HSI_red_004.png</normaloff>../GUI pictures/Hexagons/HSI - Red/HSI_red_004.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mov</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../GUI pictures/Hexagons/HSI - Ultra/HSI_ultra_004.png</normaloff>../GUI pictures/Hexagons/HSI - Ultra/HSI_ultra_004.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="MesajEroare">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>670</y>
+       <width>441</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Unispace</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>200</y>
+       <width>632</width>
+       <height>392</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../GUI pictures/FINAL/HexBoard.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_8">
+     <property name="geometry">
+      <rect>
+       <x>552</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_5">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_4">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_10">
+     <property name="geometry">
+      <rect>
+       <x>618</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_6">
+     <property name="geometry">
+      <rect>
+       <x>486</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_2">
+     <property name="geometry">
+      <rect>
+       <x>354</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_0">
+     <property name="geometry">
+      <rect>
+       <x>288</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_1">
+     <property name="geometry">
+      <rect>
+       <x>321</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_7">
+     <property name="geometry">
+      <rect>
+       <x>519</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_3">
+     <property name="geometry">
+      <rect>
+       <x>387</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_0_9">
+     <property name="geometry">
+      <rect>
+       <x>585</x>
+       <y>237</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_1">
+     <property name="geometry">
+      <rect>
+       <x>337</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_0">
+     <property name="geometry">
+      <rect>
+       <x>304</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_5">
+     <property name="geometry">
+      <rect>
+       <x>469</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_7">
+     <property name="geometry">
+      <rect>
+       <x>535</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_3">
+     <property name="geometry">
+      <rect>
+       <x>403</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_8">
+     <property name="geometry">
+      <rect>
+       <x>568</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_6">
+     <property name="geometry">
+      <rect>
+       <x>502</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_10">
+     <property name="geometry">
+      <rect>
+       <x>634</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_4">
+     <property name="geometry">
+      <rect>
+       <x>436</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_1_9">
+     <property name="geometry">
+      <rect>
+       <x>601</x>
+       <y>266</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_10">
+     <property name="geometry">
+      <rect>
+       <x>666</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_7">
+     <property name="geometry">
+      <rect>
+       <x>551</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_5">
+     <property name="geometry">
+      <rect>
+       <x>501</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_3">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_9">
+     <property name="geometry">
+      <rect>
+       <x>617</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_8">
+     <property name="geometry">
+      <rect>
+       <x>584</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_7">
+     <property name="geometry">
+      <rect>
+       <x>567</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_3">
+     <property name="geometry">
+      <rect>
+       <x>419</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_0">
+     <property name="geometry">
+      <rect>
+       <x>336</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_2">
+     <property name="geometry">
+      <rect>
+       <x>402</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_4">
+     <property name="geometry">
+      <rect>
+       <x>468</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_5">
+     <property name="geometry">
+      <rect>
+       <x>485</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_1">
+     <property name="geometry">
+      <rect>
+       <x>353</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_10">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_2">
+     <property name="geometry">
+      <rect>
+       <x>386</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_8">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_9">
+     <property name="geometry">
+      <rect>
+       <x>633</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_1">
+     <property name="geometry">
+      <rect>
+       <x>369</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_0">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_4">
+     <property name="geometry">
+      <rect>
+       <x>452</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_3_6">
+     <property name="geometry">
+      <rect>
+       <x>534</x>
+       <y>324</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_2_6">
+     <property name="geometry">
+      <rect>
+       <x>518</x>
+       <y>295</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_0">
+     <property name="geometry">
+      <rect>
+       <x>352</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_10">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_4">
+     <property name="geometry">
+      <rect>
+       <x>532</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_4">
+     <property name="geometry">
+      <rect>
+       <x>484</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_6">
+     <property name="geometry">
+      <rect>
+       <x>566</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_8">
+     <property name="geometry">
+      <rect>
+       <x>648</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_10">
+     <property name="geometry">
+      <rect>
+       <x>714</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_5">
+     <property name="geometry">
+      <rect>
+       <x>565</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_7">
+     <property name="geometry">
+      <rect>
+       <x>583</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_6">
+     <property name="geometry">
+      <rect>
+       <x>582</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_2">
+     <property name="geometry">
+      <rect>
+       <x>434</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_1">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_5">
+     <property name="geometry">
+      <rect>
+       <x>517</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_10">
+     <property name="geometry">
+      <rect>
+       <x>682</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_3">
+     <property name="geometry">
+      <rect>
+       <x>483</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_6">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_5">
+     <property name="geometry">
+      <rect>
+       <x>533</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_6">
+     <property name="geometry">
+      <rect>
+       <x>598</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_7">
+     <property name="geometry">
+      <rect>
+       <x>599</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_2">
+     <property name="geometry">
+      <rect>
+       <x>418</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_1">
+     <property name="geometry">
+      <rect>
+       <x>401</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_4">
+     <property name="geometry">
+      <rect>
+       <x>516</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_2">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_9">
+     <property name="geometry">
+      <rect>
+       <x>665</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_9">
+     <property name="geometry">
+      <rect>
+       <x>649</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_1">
+     <property name="geometry">
+      <rect>
+       <x>433</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_3">
+     <property name="geometry">
+      <rect>
+       <x>451</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_2">
+     <property name="geometry">
+      <rect>
+       <x>466</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_8">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_7">
+     <property name="geometry">
+      <rect>
+       <x>631</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_4_8">
+     <property name="geometry">
+      <rect>
+       <x>616</x>
+       <y>353</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_0">
+     <property name="geometry">
+      <rect>
+       <x>368</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_1">
+     <property name="geometry">
+      <rect>
+       <x>417</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_4">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_3">
+     <property name="geometry">
+      <rect>
+       <x>467</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_10">
+     <property name="geometry">
+      <rect>
+       <x>698</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_9">
+     <property name="geometry">
+      <rect>
+       <x>681</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_7">
+     <property name="geometry">
+      <rect>
+       <x>615</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_5_8">
+     <property name="geometry">
+      <rect>
+       <x>632</x>
+       <y>382</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_0">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_5">
+     <property name="geometry">
+      <rect>
+       <x>549</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_3">
+     <property name="geometry">
+      <rect>
+       <x>499</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_6_0">
+     <property name="geometry">
+      <rect>
+       <x>384</x>
+       <y>411</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_7_9">
+     <property name="geometry">
+      <rect>
+       <x>697</x>
+       <y>440</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_4">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_8">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_6">
+     <property name="geometry">
+      <rect>
+       <x>646</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_0">
+     <property name="geometry">
+      <rect>
+       <x>416</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_9">
+     <property name="geometry">
+      <rect>
+       <x>713</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_6">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_9">
+     <property name="geometry">
+      <rect>
+       <x>729</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_2">
+     <property name="geometry">
+      <rect>
+       <x>514</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_0">
+     <property name="geometry">
+      <rect>
+       <x>448</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_2">
+     <property name="geometry">
+      <rect>
+       <x>482</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_7">
+     <property name="geometry">
+      <rect>
+       <x>663</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_3">
+     <property name="geometry">
+      <rect>
+       <x>531</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_10">
+     <property name="geometry">
+      <rect>
+       <x>762</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_0">
+     <property name="geometry">
+      <rect>
+       <x>432</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_3">
+     <property name="geometry">
+      <rect>
+       <x>547</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_8">
+     <property name="geometry">
+      <rect>
+       <x>712</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_1">
+     <property name="geometry">
+      <rect>
+       <x>449</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_9">
+     <property name="geometry">
+      <rect>
+       <x>745</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_3">
+     <property name="geometry">
+      <rect>
+       <x>515</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_4">
+     <property name="geometry">
+      <rect>
+       <x>548</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_7">
+     <property name="geometry">
+      <rect>
+       <x>647</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_5">
+     <property name="geometry">
+      <rect>
+       <x>613</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_5">
+     <property name="geometry">
+      <rect>
+       <x>581</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_10">
+     <property name="geometry">
+      <rect>
+       <x>778</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_10">
+     <property name="geometry">
+      <rect>
+       <x>746</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_4">
+     <property name="geometry">
+      <rect>
+       <x>564</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_8">
+     <property name="geometry">
+      <rect>
+       <x>696</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_5">
+     <property name="geometry">
+      <rect>
+       <x>597</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_2">
+     <property name="geometry">
+      <rect>
+       <x>498</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_9_1">
+     <property name="geometry">
+      <rect>
+       <x>465</x>
+       <y>498</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_8_6">
+     <property name="geometry">
+      <rect>
+       <x>614</x>
+       <y>469</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_1">
+     <property name="geometry">
+      <rect>
+       <x>481</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonHex_10_7">
+     <property name="geometry">
+      <rect>
+       <x>679</x>
+       <y>527</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N1">
+     <property name="geometry">
+      <rect>
+       <x>263</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N2">
+     <property name="geometry">
+      <rect>
+       <x>296</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N3">
+     <property name="geometry">
+      <rect>
+       <x>329</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N4">
+     <property name="geometry">
+      <rect>
+       <x>362</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N5">
+     <property name="geometry">
+      <rect>
+       <x>395</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N6">
+     <property name="geometry">
+      <rect>
+       <x>428</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N8">
+     <property name="geometry">
+      <rect>
+       <x>494</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N9">
+     <property name="geometry">
+      <rect>
+       <x>527</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N7">
+     <property name="geometry">
+      <rect>
+       <x>461</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N10">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="N11">
+     <property name="geometry">
+      <rect>
+       <x>593</x>
+       <y>200</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S1">
+     <property name="geometry">
+      <rect>
+       <x>455</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S2">
+     <property name="geometry">
+      <rect>
+       <x>488</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S7">
+     <property name="geometry">
+      <rect>
+       <x>653</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S4">
+     <property name="geometry">
+      <rect>
+       <x>554</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S5">
+     <property name="geometry">
+      <rect>
+       <x>587</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S6">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S9">
+     <property name="geometry">
+      <rect>
+       <x>719</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S10">
+     <property name="geometry">
+      <rect>
+       <x>752</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S3">
+     <property name="geometry">
+      <rect>
+       <x>521</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S8">
+     <property name="geometry">
+      <rect>
+       <x>686</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="S11">
+     <property name="geometry">
+      <rect>
+       <x>785</x>
+       <y>548</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V1">
+     <property name="geometry">
+      <rect>
+       <x>246</x>
+       <y>229</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V2">
+     <property name="geometry">
+      <rect>
+       <x>262</x>
+       <y>258</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V3">
+     <property name="geometry">
+      <rect>
+       <x>278</x>
+       <y>287</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V4">
+     <property name="geometry">
+      <rect>
+       <x>294</x>
+       <y>316</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V5">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>345</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V6">
+     <property name="geometry">
+      <rect>
+       <x>326</x>
+       <y>374</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V7">
+     <property name="geometry">
+      <rect>
+       <x>342</x>
+       <y>403</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V8">
+     <property name="geometry">
+      <rect>
+       <x>358</x>
+       <y>432</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V9">
+     <property name="geometry">
+      <rect>
+       <x>374</x>
+       <y>461</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V10">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>490</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="V11">
+     <property name="geometry">
+      <rect>
+       <x>406</x>
+       <y>519</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E8">
+     <property name="geometry">
+      <rect>
+       <x>754</x>
+       <y>432</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E11">
+     <property name="geometry">
+      <rect>
+       <x>802</x>
+       <y>519</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E4">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>316</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E2">
+     <property name="geometry">
+      <rect>
+       <x>658</x>
+       <y>258</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E1">
+     <property name="geometry">
+      <rect>
+       <x>642</x>
+       <y>229</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E6">
+     <property name="geometry">
+      <rect>
+       <x>722</x>
+       <y>374</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E9">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>461</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E7">
+     <property name="geometry">
+      <rect>
+       <x>738</x>
+       <y>403</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E3">
+     <property name="geometry">
+      <rect>
+       <x>674</x>
+       <y>287</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E10">
+     <property name="geometry">
+      <rect>
+       <x>786</x>
+       <y>490</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="E5">
+     <property name="geometry">
+      <rect>
+       <x>706</x>
+       <y>345</y>
+       <width>44</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Turns">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>60</y>
+       <width>611</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>28</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Patcher">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>70</y>
+       <width>26</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>N3</zorder>
+    <zorder>N2</zorder>
+    <zorder>N1</zorder>
+    <zorder>ButtonHex_1_1</zorder>
+    <zorder>ButtonHex_1_0</zorder>
+    <zorder>ButtonHex_1_5</zorder>
+    <zorder>ButtonHex_1_7</zorder>
+    <zorder>ButtonHex_1_3</zorder>
+    <zorder>ButtonHex_1_8</zorder>
+    <zorder>ButtonHex_1_2</zorder>
+    <zorder>ButtonHex_1_6</zorder>
+    <zorder>ButtonHex_1_10</zorder>
+    <zorder>ButtonHex_1_4</zorder>
+    <zorder>ButtonHex_1_9</zorder>
+    <zorder>ButtonHex_3_10</zorder>
+    <zorder>ButtonHex_2_7</zorder>
+    <zorder>ButtonHex_3_5</zorder>
+    <zorder>ButtonHex_3_3</zorder>
+    <zorder>ButtonHex_2_9</zorder>
+    <zorder>ButtonHex_2_8</zorder>
+    <zorder>ButtonHex_3_7</zorder>
+    <zorder>ButtonHex_2_3</zorder>
+    <zorder>ButtonHex_3_0</zorder>
+    <zorder>ButtonHex_3_2</zorder>
+    <zorder>ButtonHex_3_4</zorder>
+    <zorder>ButtonHex_2_5</zorder>
+    <zorder>ButtonHex_2_1</zorder>
+    <zorder>ButtonHex_2_10</zorder>
+    <zorder>ButtonHex_2_2</zorder>
+    <zorder>ButtonHex_3_8</zorder>
+    <zorder>ButtonHex_3_9</zorder>
+    <zorder>ButtonHex_3_1</zorder>
+    <zorder>ButtonHex_2_0</zorder>
+    <zorder>ButtonHex_2_4</zorder>
+    <zorder>ButtonHex_3_6</zorder>
+    <zorder>ButtonHex_2_6</zorder>
+    <zorder>ButtonHex_4_0</zorder>
+    <zorder>ButtonHex_7_10</zorder>
+    <zorder>ButtonHex_7_4</zorder>
+    <zorder>ButtonHex_4_4</zorder>
+    <zorder>ButtonHex_5_6</zorder>
+    <zorder>ButtonHex_6_8</zorder>
+    <zorder>ButtonHex_6_10</zorder>
+    <zorder>ButtonHex_7_5</zorder>
+    <zorder>ButtonHex_4_7</zorder>
+    <zorder>ButtonHex_6_6</zorder>
+    <zorder>ButtonHex_5_2</zorder>
+    <zorder>ButtonHex_4_1</zorder>
+    <zorder>ButtonHex_4_5</zorder>
+    <zorder>ButtonHex_4_10</zorder>
+    <zorder>ButtonHex_6_3</zorder>
+    <zorder>ButtonHex_4_6</zorder>
+    <zorder>ButtonHex_5_5</zorder>
+    <zorder>ButtonHex_7_6</zorder>
+    <zorder>ButtonHex_5_7</zorder>
+    <zorder>ButtonHex_4_2</zorder>
+    <zorder>ButtonHex_5_1</zorder>
+    <zorder>ButtonHex_6_4</zorder>
+    <zorder>ButtonHex_6_2</zorder>
+    <zorder>ButtonHex_5_9</zorder>
+    <zorder>ButtonHex_4_9</zorder>
+    <zorder>ButtonHex_7_1</zorder>
+    <zorder>ButtonHex_4_3</zorder>
+    <zorder>ButtonHex_7_2</zorder>
+    <zorder>ButtonHex_7_8</zorder>
+    <zorder>ButtonHex_7_7</zorder>
+    <zorder>ButtonHex_4_8</zorder>
+    <zorder>ButtonHex_5_0</zorder>
+    <zorder>ButtonHex_6_1</zorder>
+    <zorder>ButtonHex_5_4</zorder>
+    <zorder>ButtonHex_5_3</zorder>
+    <zorder>ButtonHex_5_10</zorder>
+    <zorder>ButtonHex_6_9</zorder>
+    <zorder>ButtonHex_6_7</zorder>
+    <zorder>ButtonHex_5_8</zorder>
+    <zorder>ButtonHex_7_0</zorder>
+    <zorder>ButtonHex_6_5</zorder>
+    <zorder>ButtonHex_7_3</zorder>
+    <zorder>ButtonHex_6_0</zorder>
+    <zorder>ButtonHex_7_9</zorder>
+    <zorder>ButtonHex_10_4</zorder>
+    <zorder>ButtonHex_8_8</zorder>
+    <zorder>ButtonHex_10_6</zorder>
+    <zorder>ButtonHex_8_0</zorder>
+    <zorder>ButtonHex_8_9</zorder>
+    <zorder>ButtonHex_9_6</zorder>
+    <zorder>ButtonHex_9_9</zorder>
+    <zorder>ButtonHex_10_2</zorder>
+    <zorder>ButtonHex_10_0</zorder>
+    <zorder>ButtonHex_8_2</zorder>
+    <zorder>ButtonHex_9_7</zorder>
+    <zorder>ButtonHex_9_3</zorder>
+    <zorder>ButtonHex_9_10</zorder>
+    <zorder>ButtonHex_9_0</zorder>
+    <zorder>ButtonHex_10_3</zorder>
+    <zorder>ButtonHex_10_8</zorder>
+    <zorder>ButtonHex_8_1</zorder>
+    <zorder>ButtonHex_10_9</zorder>
+    <zorder>ButtonHex_8_3</zorder>
+    <zorder>ButtonHex_8_4</zorder>
+    <zorder>ButtonHex_8_7</zorder>
+    <zorder>ButtonHex_10_5</zorder>
+    <zorder>ButtonHex_8_5</zorder>
+    <zorder>ButtonHex_10_10</zorder>
+    <zorder>ButtonHex_8_10</zorder>
+    <zorder>ButtonHex_9_4</zorder>
+    <zorder>ButtonHex_9_8</zorder>
+    <zorder>ButtonHex_9_5</zorder>
+    <zorder>ButtonHex_9_2</zorder>
+    <zorder>ButtonHex_9_1</zorder>
+    <zorder>ButtonHex_8_6</zorder>
+    <zorder>ButtonHex_10_1</zorder>
+    <zorder>ButtonHex_10_7</zorder>
+    <zorder>ButtonHex_0_4</zorder>
+    <zorder>ButtonHex_0_6</zorder>
+    <zorder>ButtonHex_0_0</zorder>
+    <zorder>ButtonHex_0_7</zorder>
+    <zorder>ButtonHex_0_5</zorder>
+    <zorder>ButtonHex_0_9</zorder>
+    <zorder>ButtonHex_0_10</zorder>
+    <zorder>ButtonHex_0_8</zorder>
+    <zorder>ButtonHex_0_1</zorder>
+    <zorder>ButtonHex_0_2</zorder>
+    <zorder>ButtonHex_0_3</zorder>
+    <zorder>N4</zorder>
+    <zorder>N5</zorder>
+    <zorder>N6</zorder>
+    <zorder>N8</zorder>
+    <zorder>N9</zorder>
+    <zorder>N7</zorder>
+    <zorder>N10</zorder>
+    <zorder>N11</zorder>
+    <zorder>S1</zorder>
+    <zorder>S2</zorder>
+    <zorder>S7</zorder>
+    <zorder>S4</zorder>
+    <zorder>S5</zorder>
+    <zorder>S6</zorder>
+    <zorder>S9</zorder>
+    <zorder>S10</zorder>
+    <zorder>S3</zorder>
+    <zorder>S8</zorder>
+    <zorder>S11</zorder>
+    <zorder>V1</zorder>
+    <zorder>V2</zorder>
+    <zorder>V3</zorder>
+    <zorder>V4</zorder>
+    <zorder>V5</zorder>
+    <zorder>V6</zorder>
+    <zorder>V7</zorder>
+    <zorder>V8</zorder>
+    <zorder>V9</zorder>
+    <zorder>V10</zorder>
+    <zorder>V11</zorder>
+    <zorder>E8</zorder>
+    <zorder>E11</zorder>
+    <zorder>E4</zorder>
+    <zorder>E2</zorder>
+    <zorder>E1</zorder>
+    <zorder>E6</zorder>
+    <zorder>E9</zorder>
+    <zorder>E7</zorder>
+    <zorder>E3</zorder>
+    <zorder>E10</zorder>
+    <zorder>E5</zorder>
+    <zorder>Turns</zorder>
+    <zorder>Patcher</zorder>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="Winner">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>150</y>
+       <width>961</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DaRop">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>390</y>
+       <width>251</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../GUI pictures/Da_Hex.png</normaloff>../GUI pictures/Da_Hex.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>400</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="NuROP">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>390</y>
+       <width>251</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../GUI pictures/Nu_Hex.png</normaloff>../GUI pictures/Nu_Hex.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>400</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="IntrebareROP">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>170</y>
+       <width>1041</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Doriti sa preluati miscarea primului jucator?</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

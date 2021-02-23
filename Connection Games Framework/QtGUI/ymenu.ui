@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YMenu</class>
+ <widget class="QFrame" name="YMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Y Game</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../GUI pictures/bee-and-dripping-honeycomb-sticker-1561735216.3313851.png</normaloff>../GUI pictures/bee-and-dripping-honeycomb-sticker-1561735216.3313851.png</iconset>
+  </property>
+  <widget class="QPushButton" name="YPlayButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>142</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../GUI pictures/YPlay.png</normaloff>../GUI pictures/YPlay.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="YRulesButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>335</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../GUI pictures/YRules.png</normaloff>../GUI pictures/YRules.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="YBackButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>518</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../GUI pictures/YBack.png</normaloff>../GUI pictures/YBack.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

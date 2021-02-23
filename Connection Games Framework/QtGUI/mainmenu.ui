@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QFrame" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Connection Games</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../GUI pictures/bee-and-dripping-honeycomb-sticker-1561735216.3313851.png</normaloff>../GUI pictures/bee-and-dripping-honeycomb-sticker-1561735216.3313851.png</iconset>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::NoFrame</enum>
+  </property>
+  <widget class="QPushButton" name="YButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>67</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../GUI pictures/Y.png</normaloff>../GUI pictures/Y.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HexButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>245</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../GUI pictures/Hex.png</normaloff>../GUI pictures/Hex.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HavannahButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>423</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../GUI pictures/Havannah.png</normaloff>../GUI pictures/Havannah.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ExitButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>601</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../GUI pictures/ButonExit.png</normaloff>../GUI pictures/ButonExit.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
